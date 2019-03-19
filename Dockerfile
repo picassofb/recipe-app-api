@@ -1,5 +1,5 @@
-FROM python:alpine3.9
-MAINTAINER Eduardo Salazar
+FROM python:3.7-alpine
+LABEL key="Eduardo Salazar" 
 
 ENV PYTHONUNBUFFERED 1
 
