@@ -16,10 +16,10 @@ class AdminSiteTest(TestCase):
         self.user = get_user_model().objects.create_user(
             email='test@eduardosalazar.tech',
             password='clave1234',
-            name='Tesu User'
+            name='Test User'
         )
 
-    def test_users_listes(self):
+    def test_users_listed(self):
         """ Prueba de que los usuario han sido listados """
         url = reverse('admin:core_user_changelist')
         res = self.client.get(url)
